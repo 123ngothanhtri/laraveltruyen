@@ -10,7 +10,7 @@ class HomeController extends Controller
     
     public function trangchu()
     {
-        $truyen=Truyen::all();
+        $truyen=Truyen::orderBy('id_truyen', 'desc')->get();
         $theloai=TheLoai::all();
         return view('home.trang_chu',compact('truyen','theloai'));
     }

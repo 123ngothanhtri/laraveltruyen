@@ -14,7 +14,7 @@ class TruyenController extends Controller
     }
     public function index()
     {
-        $truyen = Truyen::join('theloai', 'truyen.id_theloai', 'theloai.id_theloai')->get();
+        $truyen = Truyen::join('theloai', 'truyen.id_theloai', 'theloai.id_theloai')->orderBy('id_truyen', 'desc')->get();
         return view('admin.truyen',compact('truyen'));
     }
 

@@ -12,7 +12,7 @@
                     {{ session('msg') }}<button type="button" class="close" data-dismiss="alert">&times;</button>
                 </div>
             @endif
-            <form action="{{ url('truyen-them') }}" method="post" enctype="multipart/form-data" class="form-group">@csrf
+            <form action="{{ url('truyen-sua') }}" method="post" enctype="multipart/form-data" class="form-group">@csrf
                 <div class="row">
                     <div class="col-md-4">
                         <input type="hidden" name="ipidt" value="{{ $truyen->id_truyen }}">
@@ -45,7 +45,7 @@
                         <label>Nội dung </label>
                         <textarea name="editor" id="editor" rows="30" cols="80">{{ $truyen->noidung_truyen }}</textarea>
 
-                        <input class="btn btn-info mt-2" type="submit" value="Thêm">
+                        <input class="btn btn-info mt-2" type="submit" value="Lưu lại">
                     </div>
 
                 </div>

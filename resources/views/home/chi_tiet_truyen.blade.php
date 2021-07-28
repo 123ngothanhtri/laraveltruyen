@@ -8,7 +8,7 @@
     <div class="card my-2">
         <div class="card-body">
             <div style="">
-                <img style="object-fit: cover;width: 300px; height:400px" src="{{ asset('storage/' . $truyen->hinhanh_truyen) }}" alt="ảnh">
+                <img style="height:300px" src="{{ asset('storage/' . $truyen->hinhanh_truyen) }}" alt="ảnh">
             </div>
         </div>
         <div class="card-footer">

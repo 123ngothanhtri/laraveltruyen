@@ -12,7 +12,7 @@ class Truyen extends Migration
             $table->id('id_truyen');
             $table->string('ten_truyen');
             $table->string('hinhanh_truyen');
-            $table->string('noidung_truyen');
+            $table->text('noidung_truyen');
             $table->string('tacgia_truyen');
             $table->date('ngaycapnhat_truyen')->default('2021-12-12');
             $table->integer('luotxem_truyen')->default('0');
