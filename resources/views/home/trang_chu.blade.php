@@ -9,12 +9,12 @@
         <a
         @if(isset($xn))
             @if($xn==$t->id_theloai)
-            class="btn btn-sm btn-info"
+            class="btn btn-sm btn-secondary"
             @else
-            class="btn btn-sm btn-outline-info"
+            class="btn btn-sm btn-outline-secondary"
             @endif 
         @else
-            class="btn btn-sm btn-outline-info"
+            class="btn btn-sm btn-outline-secondary"
         @endif
         href="{{ url('loc/'.$t->id_theloai) }}">{{ $t->ten_theloai }}</a>
     @endforeach
